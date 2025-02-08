@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chat with our Space Explorer AI to learn about space launches and NASA updates!">
+  <title>Spaceicaler AI Agent</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>SPACEICALER AI🚀</h2>
+    </div>
+    <div id="chat-output" class="chat-output">
+      <!-- Messages will appear here -->
+    </div>
+    <div class="chat-input">
+      <label for="user-input" class="visually-hidden">Enter your question:</label>
+      <input type="text" id="user-input" placeholder="Ask about space launches..." autocomplete="off">
+      <button id="send-btn">Send</button>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
